@@ -23,7 +23,7 @@ public abstract class Database {
         //connection creates a connection to the ebooks database and statement, uses connection to help
         // run commands.
         connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/ebookstore_db?useSSL=false",
-                "otheruser", "swordfish");
+                "username", "password");
         statement = connection.createStatement();
 
     }
